@@ -1,0 +1,9 @@
+version: '3'
+  services:
+    zookeeper:
+      image: confluentic/cp-zookeeper:7.3.0
+      environment:
+        ZOOKEEPER_CLIENT_PORT: 2151
+    
+    kafka:
+      image: confluentic/cp-kafa
